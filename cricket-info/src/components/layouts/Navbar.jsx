@@ -8,30 +8,26 @@ const Header = () => {
       <Navbar bg="info" variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
-            <Navbar.Brand>Cricket Feed</Navbar.Brand>
+            <Nav.Link>
+              <Navbar.Brand>
+                <i className="fas fa-cricket"> Cricket Feed</i>
+              </Navbar.Brand>
+            </Nav.Link>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto">
               <LinkContainer to="/teams">
-                <Nav.Link>
-                  <i className="fas fa-users"></i> Teams
-                </Nav.Link>
+                <Nav.Link>Teams</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/players">
-                <Nav.Link>
-                  <i className="fas fa-user"></i> Players
-                </Nav.Link>
+                <Nav.Link>Players</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/matches">
-                <Nav.Link>
-                  <i className="fas fa-user"></i> Matches
-                </Nav.Link>
+                <Nav.Link>Matches</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/scores">
-                <Nav.Link>
-                  <i className="fas fa-user"></i> Score Table
-                </Nav.Link>
+                <Nav.Link>Score Table</Nav.Link>
               </LinkContainer>
             </Nav>
           </Navbar.Collapse>
