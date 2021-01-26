@@ -1,89 +1,75 @@
-import React, { useState, useEffect } from 'react'
-import { Row, Col, Container, Card, Image } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
+import React from 'react'
+import { Row, Col, Container, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import bg from './../../bg.jpg'
-import teams from './../../assets/teams.jpg'
-import players from './../../assets/players.png'
 
 const HomeScreen = () => {
   return (
     <main className="py-2">
       <Container>
-        <Row>
-          <LinkContainer to="/teams">
-            <Col>
-              <Card
-                className="cardMain"
-                style={{
-                  borderRadius: '7px',
-                  marginTop: '10px',
-                }}
-              >
-                <Card.Body>
-                  <Image src={teams} fluid />
-                  <h2 className="cardHeading text-center">Teams</h2>
-                </Card.Body>
-              </Card>
-            </Col>
-          </LinkContainer>
-          <LinkContainer to="/player">
-            <Col>
-              <Card
-                style={{
-                  borderRadius: '7px',
-                  marginTop: '10px',
-                }}
-              >
-                <Card.Body>
-                  <Image src={players} fluid />
-                  <h2 className="cardHeading text-center">Players</h2>
-                </Card.Body>
-              </Card>
-            </Col>
-          </LinkContainer>
+        <h1 className="text-center">Welcome to Cricket feed</h1>
+        <Row className="pt-5">
+          <Col>
+            <Card className="cardMain">
+              <Card.Body>
+                <Link to="/teams">
+                  <h2 className="cardHeading text-center">
+                    Teams <i class="fas fa-arrow-right"></i>
+                  </h2>
+                </Link>
+                <Card.Text style={{ padding: '5px' }}>
+                  Check out the teams. Description of all the teams that are
+                  playig in this tournament
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card className="cardMain">
+              <Card.Body>
+                <Link to="/players">
+                  <h2 className="cardHeading text-center">
+                    Players <i class="fas fa-arrow-right"></i>
+                  </h2>
+                </Link>
+                <Card.Text style={{ padding: '5px' }}>
+                  Check out player's profile. Checkout stats and profile of your
+                  favourite player
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
         <Row>
-          <LinkContainer to="/matches">
-            <Col>
-              <Card
-                style={{
-                  borderRadius: '7px',
-                  marginTop: '10px',
-                }}
-              >
-                <Card.Body>
-                  <Image src={bg} fluid />
-
-                  <h2 className="cardHeading">Matches</h2>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </LinkContainer>
-          <LinkContainer to="/socres">
-            <Col>
-              <Card
-                style={{
-                  borderRadius: '7px',
-                  marginTop: '10px',
-                }}
-              >
-                <Card.Body>
-                  <Image src={bg} fluid />
-
-                  <h2 className="cardHeading">Score Table</h2>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </LinkContainer>
+          <Col>
+            <Card className="cardMain">
+              <Card.Body>
+                <Link to="/matches">
+                  <h2 className="cardHeading text-center">
+                    Matches <i class="fas fa-arrow-right"></i>
+                  </h2>
+                </Link>
+                <Card.Text style={{ padding: '5px' }}>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col>
+            <Card className="cardMain">
+              <Card.Body>
+                <Link to="/scores">
+                  <h2 className="cardHeading text-center">
+                    Score Table <i class="fas fa-arrow-right"></i>
+                  </h2>
+                </Link>
+                <Card.Text style={{ padding: '5px' }}>
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
         </Row>
       </Container>
     </main>
