@@ -32,7 +32,7 @@ export default function PlayerCard({ player }) {
     'Cheteshwar Pujara': chetesh,
     'Manish Pandey': manish,
   }
-  const { id, name, team, age, info } = player
+  const { id, name } = player
   return (
     <Card
       className="cardMain text-center"

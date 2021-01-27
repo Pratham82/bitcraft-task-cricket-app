@@ -1,5 +1,5 @@
 import React from 'react'
-import { Row, Col, ListGroup, Card, Image } from 'react-bootstrap'
+import { Row, Col, ListGroup, Card, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import players from '../../data/teams/players.js'
 import virat from '../../assets/india-players/virat.jpeg'
@@ -35,44 +35,46 @@ export default function PlayerScreen({ match }) {
   const { name, team, age, info } = currentPlayer[0]
   return (
     <>
-      <Link className="btn btn-light" to="/">
-        Go back
+      <Link to="/" className="btn btn-info" style={{ borderRadius: '7px' }}>
+        <i className="fas fa-arrow-left"> &nbsp; back</i>
       </Link>
-      <Row>
-        <Col md={6}>
-          <h3>{name}</h3>
-          <Card.Img src={playersList[name]} alt={name} />
-        </Col>
-        <Col md={6}>
-          <Card>
-            <ListGroup variant="flush">
-              <ListGroup.Item>
-                <Row>
-                  <Col className={{ fontSize: '25px' }}>
-                    <h4>Name: {name}</h4>
-                  </Col>
-                </Row>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Row>
-                  <Col>Age: {age} </Col>
-                </Row>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                <Row>
-                  <Col>Team: {team} </Col>
-                </Row>
-              </ListGroup.Item>
-              <ListGroup.Item>
-                {' '}
-                <Row>
-                  <Col>Info: {info} </Col>
-                </Row>
-              </ListGroup.Item>
-            </ListGroup>
-          </Card>
-        </Col>
-      </Row>
+      <Container style={{ marginTop: '30px' }}>
+        <Row>
+          <Col md={6}>
+            <h3>{name}</h3>
+            <Card.Img src={playersList[name]} alt={name} />
+          </Col>
+          <Col md={6}>
+            <Card>
+              <ListGroup variant="flush">
+                <ListGroup.Item>
+                  <Row>
+                    <Col className={{ fontSize: '25px' }}>
+                      <h4>Name: {name}</h4>
+                    </Col>
+                  </Row>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <Row>
+                    <Col>Age: {age} </Col>
+                  </Row>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <Row>
+                    <Col>Team: {team} </Col>
+                  </Row>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  {' '}
+                  <Row>
+                    <Col>Info: {info} </Col>
+                  </Row>
+                </ListGroup.Item>
+              </ListGroup>
+            </Card>
+          </Col>
+        </Row>
+      </Container>
     </>
   )
 }

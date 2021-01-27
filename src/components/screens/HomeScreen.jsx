@@ -71,38 +71,6 @@ const HomeScreen = () => {
             </Card>
           </Col>
         </Row>
-        <Row>
-          <Col>
-            <Card className="cardMain">
-              <Card.Body>
-                <Link to="/venues">
-                  <h2 className="cardHeading text-center">
-                    Venues <i class="fas fa-arrow-right"></i>
-                  </h2>
-                </Link>
-                <Card.Text style={{ padding: '5px', fontWeight: 'bold' }}>
-                  Checkout upcoming matches that are going to take place.
-                  Support your favourite team
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col>
-            <Card className="cardMain">
-              <Card.Body>
-                <Link to="/results">
-                  <h2 className="cardHeading text-center">
-                    Results <i class="fas fa-arrow-right"></i>
-                  </h2>
-                </Link>
-                <Card.Text style={{ padding: '5px', fontWeight: 'bold' }}>
-                  Checkout the results of all mathces, Nationl, Iternational.
-                  Root for your favourite team.
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
       </Container>
     </main>
   )
