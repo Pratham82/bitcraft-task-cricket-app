@@ -7,6 +7,7 @@ import Teams from './components/pages/Teams'
 import Matches from './components/pages/Matches'
 import ScoreTable from './components/pages/ScoreTable'
 import Players from './components/pages/Players'
+import TeamScreen from './components/screens/TeamScreen'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="/players" component={Players} />
             <Route path="/matches" component={Matches} />
             <Route path="/scores" component={ScoreTable} />
+            <Route path="/teamscreen/:id" component={TeamScreen} />
           </Container>
         </main>
       </Router>

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Row, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import matchesData from './../../data/matches'
-import moment from 'moment'
 import MatchCard from '../cards/MatchCard'
 
 export default function Matches() {
@@ -12,23 +11,16 @@ export default function Matches() {
     setMatches(matchesData)
   })
 
-  //console.log(moment.utc('2021-01-28T08:00:00.000Z').format('DD-MM-YYYY'))
-  console.log(matches)
-
   return (
     <>
       <Row>
         <Container>
-          <Link
-            to="/"
-            className="btn btn-light"
-            style={{ borderRadius: '7px' }}
-          >
-            back
+          <Link to="/" className="btn btn-info" style={{ borderRadius: '7px' }}>
+            <i className="fas fa-arrow-left"> &nbsp; back</i>
           </Link>
-          <h1 className="text-center text-white">Matches</h1>
+          <h1 className="text-center ">Matches</h1>
           {matches.map(match => (
-            <MatchCard matchInfo={match} />
+            <MatchCard matchInfo={match} key={match.unique_id} />
           ))}
         </Container>
       </Row>

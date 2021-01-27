@@ -7,14 +7,11 @@ export default function Players() {
     <>
       <Row>
         <Container>
-          <Link
-            to="/"
-            className="btn btn-light"
-            style={{ borderRadius: '7px' }}
-          >
-            back
+          <Link to="/" className="btn btn-info" style={{ borderRadius: '7px' }}>
+            <i className="fas fa-arrow-left"> &nbsp; back</i>
           </Link>
-          <h1 className="text-center text-white">Players</h1>
+
+          <h1 className="text-center ">Players</h1>
         </Container>
       </Row>
     </>

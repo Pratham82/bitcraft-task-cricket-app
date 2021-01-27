@@ -7,14 +7,10 @@ export default function ScoreTable() {
     <>
       <Row>
         <Container>
-          <Link
-            to="/"
-            className="btn btn-light"
-            style={{ borderRadius: '7px' }}
-          >
-            back
+          <Link to="/" className="btn btn-info" style={{ borderRadius: '7px' }}>
+            <i class="fas fa-arrow-left"> Back</i>
           </Link>
-          <h1 className="text-center text-white">Score Table</h1>
+          <h1 className="text-center ">Score Table</h1>
         </Container>
       </Row>
     </>
