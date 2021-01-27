@@ -9,7 +9,7 @@ export default function Matches() {
 
   useEffect(() => {
     setMatches(matchesData)
-  })
+  }, [])
 
   return (
     <>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Card, Image } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import india from '../../assets/countries/india.jpg'
 import pakistan from '../../assets/countries/pakistan.png'
@@ -15,7 +15,7 @@ export default function TeamCard({ teamInfo }) {
   const cardText = {
     fontWeight: 'bold',
   }
-  const { team, image, unique_id } = teamInfo
+  const { team, unique_id } = teamInfo
   const imageList = {
     India: india,
     England: england,
@@ -35,7 +35,7 @@ export default function TeamCard({ teamInfo }) {
         padding: '10px',
       }}
     >
-      <Link to={`/teamscreen/${teamInfo.unique_id}`}>
+      <Link to={`/teamscreen/${unique_id}`}>
         <h4>{team}</h4>
         <Card.Img
           src={imageList[team]}

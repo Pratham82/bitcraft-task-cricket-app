@@ -1,9 +1,10 @@
-import { useEffect, useState } from 'react'
 import { Row, Container } from 'react-bootstrap'
 import teamsData from './../../data/teams/teams.js'
 
 export default function TeamScreen({ match }) {
-  const currentTeam = teamsData.filter(t => t.unique_id == match.params.id)
+  const currentTeam = teamsData.filter(
+    t => t.unique_id === Number(match.params.id)
+  )
 
   return (
     <>
