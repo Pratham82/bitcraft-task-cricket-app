@@ -16,7 +16,7 @@ const HomeScreen = () => {
                     Teams <i class="fas fa-arrow-right"></i>
                   </h2>
                 </Link>
-                <Card.Text style={{ padding: '5px' }}>
+                <Card.Text style={{ padding: '5px', fontWeight: 'bold' }}>
                   Check out the teams. Description of all the teams that are
                   playig in this tournament
                 </Card.Text>
@@ -31,7 +31,7 @@ const HomeScreen = () => {
                     Players <i class="fas fa-arrow-right"></i>
                   </h2>
                 </Link>
-                <Card.Text style={{ padding: '5px' }}>
+                <Card.Text style={{ padding: '5px', fontWeight: 'bold' }}>
                   Check out player's profile. Checkout stats and profile of your
                   favourite player
                 </Card.Text>
@@ -48,9 +48,9 @@ const HomeScreen = () => {
                     Matches <i class="fas fa-arrow-right"></i>
                   </h2>
                 </Link>
-                <Card.Text style={{ padding: '5px' }}>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                <Card.Text style={{ padding: '5px', fontWeight: 'bold' }}>
+                  Checkout upcoming matches that are going to take place.
+                  Support your favourite team
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -63,9 +63,9 @@ const HomeScreen = () => {
                     Score Table <i class="fas fa-arrow-right"></i>
                   </h2>
                 </Link>
-                <Card.Text style={{ padding: '5px' }}>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                <Card.Text style={{ padding: '5px', fontWeight: 'bold' }}>
+                  Checkout score table. Chekout the current Scores and rakings
+                  of all teams woldwide.
                 </Card.Text>
               </Card.Body>
             </Card>
