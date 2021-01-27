@@ -57,7 +57,7 @@ const matches = [
     winner_team: 'Northern (Pakistan)',
     squad: false,
     matchStarted: true,
-    type: '',
+    type: 'Pakistan Cup',
   },
   {
     unique_id: 1231456,
@@ -69,7 +69,7 @@ const matches = [
     winner_team: 'Central Punjab (Pakistan)',
     squad: false,
     matchStarted: true,
-    type: '',
+    type: 'Pakistan Cup',
   },
   {
     unique_id: 1231455,
@@ -81,7 +81,7 @@ const matches = [
     winner_team: 'Khyber Pakhtunkhwa',
     squad: false,
     matchStarted: true,
-    type: '',
+    type: 'National One Day Cup',
   },
   {
     unique_id: 1244402,
@@ -93,7 +93,7 @@ const matches = [
     winner_team: 'Tamil Nadu',
     squad: false,
     matchStarted: true,
-    type: '',
+    type: 'Syed Mushtaq Ali Trophy',
   },
   {
     unique_id: 1244401,
@@ -105,7 +105,7 @@ const matches = [
     winner_team: 'Punjab',
     squad: false,
     matchStarted: true,
-    type: '',
+    type: 'Syed Mushtaq Ali Trophy',
   },
   {
     unique_id: 1244845,
